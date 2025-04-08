@@ -54,8 +54,6 @@ export default new Vuex.Store({
         commit('setUser', decodedToken.user)
         
         return response
-      } catch (error) {
-        throw error
       } finally {
         commit('setLoading', false)
       }
@@ -75,8 +73,6 @@ export default new Vuex.Store({
         commit('setUser', decodedToken.user)
         
         return response
-      } catch (error) {
-        throw error
       } finally {
         commit('setLoading', false)
       }
@@ -109,8 +105,6 @@ export default new Vuex.Store({
         const response = await axios.get('/posts')
         commit('setPosts', response.data)
         return response.data
-      } catch (error) {
-        throw error
       } finally {
         commit('setLoading', false)
       }
@@ -123,8 +117,6 @@ export default new Vuex.Store({
         const response = await axios.get('/tags')
         commit('setTags', response.data)
         return response.data
-      } catch (error) {
-        throw error
       } finally {
         commit('setLoading', false)
       }
@@ -138,8 +130,6 @@ export default new Vuex.Store({
         // 更新文章列表
         dispatch('fetchPosts')
         return response.data
-      } catch (error) {
-        throw error
       } finally {
         commit('setLoading', false)
       }
@@ -153,8 +143,6 @@ export default new Vuex.Store({
         // 更新文章列表
         dispatch('fetchPosts')
         return response.data
-      } catch (error) {
-        throw error
       } finally {
         commit('setLoading', false)
       }
@@ -168,8 +156,6 @@ export default new Vuex.Store({
         // 更新文章列表
         dispatch('fetchPosts')
         return response.data
-      } catch (error) {
-        throw error
       } finally {
         commit('setLoading', false)
       }
@@ -183,8 +169,6 @@ export default new Vuex.Store({
         // 更新标签列表
         dispatch('fetchTags')
         return response.data
-      } catch (error) {
-        throw error
       } finally {
         commit('setLoading', false)
       }
@@ -198,8 +182,6 @@ export default new Vuex.Store({
         // 更新标签列表
         dispatch('fetchTags')
         return response.data
-      } catch (error) {
-        throw error
       } finally {
         commit('setLoading', false)
       }

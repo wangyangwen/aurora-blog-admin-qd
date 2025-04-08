@@ -173,7 +173,6 @@ export default {
         ])
       } catch (error) {
         this.$message.error('加载数据失败')
-        console.error('加载数据失败:', error)
       }
     },
     // 格式化日期
@@ -205,7 +204,6 @@ export default {
         })
         .catch(error => {
           this.$message.error('博客生成失败')
-          console.error('博客生成失败:', error)
         })
     },
     // 查看博客
@@ -261,4 +259,3 @@ export default {
   margin-top: 50px;
 }
 </style>
-</rewritten_file>
