@@ -202,7 +202,7 @@ export default {
             message: '博客生成成功！'
           })
         })
-        .catch(error => {
+        .catch(_ => {
           this.$message.error('博客生成失败')
         })
     },
